@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos de Escritorio - Distribuidores YanaArteaga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .product-card {
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+    .badge-discount {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
+    .cart-badge {
+      position: relative;
+      top: -8px;
+    }
+    .feature-list {
+      font-size: 0.9rem;
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-desktop me-2"></i> Distribuidores comerciales YanaArteaga
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="search-form d-flex ms-auto">
+            <input class="form-control" type="search" placeholder="Buscar productos...">
+            <button type="submit" class="btn btn-outline-light"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-box me-1"></i>Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="comprar-limpieza.html">Productos de Limpieza</a></li>
+                <li><a class="dropdown-item" href="comprar-electronicos.html">Productos Electrónicos</a></li>
+                <li><a class="dropdown-item" href="comprar-escritorio.html">Productos de Escritorio</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Ver Todo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about"><i class="fas fa-info-circle me-1"></i>Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contacto"><i class="fas fa-envelope me-1"></i>Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart me-1"></i>
+                <span class="badge bg-danger cart-badge">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Título y filtros -->
+  <div class="bg-light py-4">
+    <div class="container">
+      <h1 class="mb-4">Productos de Escritorio</h1>
+      
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text">Ordenar por</span>
+            <select class="form-select" id="orderBy">
+              <option value="recommended">Recomendados</option>
+              <option value="price-asc">Precio: Menor a Mayor</option>
+              <option value="price-desc">Precio: Mayor a Menor</option>
+              <option value="newest">Más recientes</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text">Filtrar por</span>
+            <select class="form-select" id="filterBy">
+              <option value="all">Todos los productos</option>
+              <option value="escritorios">Escritorios</option>
+              <option value="sillas">Sillas de oficina</option>
+              <option value="organizadores">Organizadores</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/61TDYPvqybL._AC_UF894,1000_QL80_.jpg" alt="Escritorio Ejecutivo" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Escritorio Ejecutivo Premium</h5>
+              <ul class="feature-list mb-3">
+                <li>Madera de alta calidad</li>
+                <li>Diseño ergonómico</li>
+                <li>Amplio espacio de trabajo</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/images (1).jpg" alt="Silla Ergonómica" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Silla Ergonómica Profesional</h5>
+              <ul class="feature-list mb-3">
+                <li>Soporte lumbar ajustable</li>
+                <li>Apoyabrazos 4D</li>
+                <li>Malla transpirable</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/set-escritorio-x6-pzs-portalapices-organizador-metal-set-escritorio-x6-pzs-portalapices-organizador-metal.jpg" alt="Set de Organizadores" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Set de Organizadores de Escritorio</h5>
+              <ul class="feature-list mb-3">
+                <li>6 piezas de organizadores</li>
+                <li>Material premium</li>
+                <li>Diseño elegante</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/original.jpeg" alt="Lámpara de Escritorio" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Lámpara LED de Escritorio</h5>
+              <ul class="feature-list mb-3">
+                <li>5 niveles de brillo</li>
+                <li>Control táctil</li>
+                <li>Puerto USB de carga</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/81JhGt5Vl8L._AC_SL1500_.jpg" alt="Reposapiés Ergonómico" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Reposapiés Ergonómico Ajustable</h5>
+              <ul class="feature-list mb-3">
+                <li>Altura ajustable</li>
+                <li>Superficie de masaje</li>
+                <li>Base antideslizante</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 product-card">
+            <img src="imgs/71SU-OAa3CL.jpg" alt="Pack de Artículos de Escritorio" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Pack Completo de Artículos de Escritorio</h5>
+              <ul class="feature-list mb-3">
+                <li>Incluye 20+ artículos esenciales</li>
+                <li>Organizador incluido</li>
+                <li>Alta calidad y durabilidad</li>
+              </ul>
+              <div class="d-grid gap-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Paginación -->
+      <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Siguiente</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2023 Distribuidores comerciales YanaArteaga. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Funcionalidad para añadir al carrito
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        const cartBadge = document.querySelector('.cart-badge');
+        let cartCount = parseInt(cartBadge.textContent);
+        cartBadge.textContent = cartCount + 1;
+        
+        // Notificación
+        alert('¡Producto añadido al carrito!');
+      });
+    });
+  </script>
+</body>
+</html>

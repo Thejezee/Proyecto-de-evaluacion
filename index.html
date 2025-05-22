@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio - Productos de Escritorio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-desktop me-2"></i> Distribuidores comerciales YanaArteaga
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="search-form d-flex ms-auto">
+            <input class="form-control" type="search" placeholder="Buscar productos...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i>Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-box me-1"></i>Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sillas de Oficina</a></li>
+                <li><a class="dropdown-item" href="#">Escritorios</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Ver Todo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i>Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto"><i class="fas fa-envelope me-1"></i>Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart me-1"></i>
+                <span class="badge bg-danger cart-badge">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero py-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="mb-3">Descubre Una Amplia Variedad de Nuestros Productos</h1>
+            <p class="lead mb-4">Ofrecemos una amplia gama de productos de alta calidad para hacer tu trabajo más eficiente.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Explorar Productos</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="imgs/las-mejores-tiendas-online-para-vender-tus-productos-en-peru.png" alt="Productos de Escritorio" class="img-fluid rounded-3 shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="imgs/descarga.jpg" class="card-img-top" alt="Productos de limpieza">
+              <div class="card-body">
+                <h5 class="card-title">Productos de Limpieza</h5>
+                <p class="card-text">Ofrecemos cualquier tipo de producto de limpieza en base a su presupuesto lo cotizamos.</p>
+                <!-- Modificado: Ahora el botón redirecciona a la página de compra -->
+                <a href="comprar-limpieza.html" class="btn btn-primary">Ver mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="imgs/pngtree-gadgets-in-shadowy-3d-model-image_3859892.jpg" class="card-img-top" alt="Productos electronicos">
+              <div class="card-body">
+                <h5 class="card-title">Productos electronicos</h5>
+                <p class="card-text">Productos electronicos calidad precio para cualquier uso y ocasion.</p>
+                <!-- Modificado: Ahora el botón redirecciona a la página de compra -->
+                <a href="comprar-electronicos.html" class="btn btn-primary">Ver mas...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="imgs/MUeBLE_PFICINA-1080x675.jpg" class="card-img-top" alt="Variedad de productos">
+              <div class="card-body">
+                <h5 class="card-title">Variedad de productos de escritorio</h5>
+                <p class="card-text">Entrega de productos de escritorio al por mayor. Equipamos tu oficina completa con todo lo necesario.</p>
+                <!-- Modificado: Ahora el botón redirecciona a la página de compra -->
+                <a href="comprar-escritorio.html" class="btn btn-primary">Ver mas...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="imgs/istockphoto-519407057-612x612.jpg" alt="Sobre Nosotros" class="img-fluid rounded-3 shadow">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="mb-4">Sobre Nosotros</h2>
+            <p class="lead">Somos una empresa dedicada a ofrecer todo tipo de productos de alta calidad por mayor y menor para mejorar tu productividad.</p>
+            <p>Nuestro compromiso es brindar soluciones innovadoras y duraderas que faciliten tu trabajo diario. Con años de experiencia en el mercado, entendemos las necesidades de nuestros clientes y nos esforzamos por supercar sus expectativas.</p>
+          <a href="sobre-nosotros.html" class="btn btn-primary">Más Información</a>          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="contact-form" id="contacto">
+      <div class="container">
+        <div class="form-container">
+          <h2>Contáctanos</h2>
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                  <label for="nombre">Nombre completo</label>
+                  <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                  <label for="email">Correo electrónico</label>
+                  <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Tu teléfono" required>
+                  <label for="phone">Teléfono</label>
+                  <div class="invalid-feedback">Por favor, ingresa un número de teléfono válido.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="asunto" name="asunto" required>
+                    <option value="" selected disabled>Selecciona un asunto</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="compra">Información de compra</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <label for="asunto">Asunto</label>
+                  <div class="invalid-feedback">Por favor, selecciona un asunto.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Tu mensaje" style="height: 100px" required></textarea>
+              <label for="mensaje">Mensaje</label>
+              <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-lg" type="submit" id="submitButton">
+                <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Productos variados. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script/java.js"></script>
+</body>
+</html>
